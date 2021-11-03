@@ -28,89 +28,95 @@
         class="button-up"
       ></div>
       <nav class="nav">
-        <div class="nav-logo">
-          <img class="nav-logo-img" src="./IMG/nav-logo.png" alt="hexagon" />
-          <a class="nav-logo-symbol" href="#">H</a>
-          <a class="nav-logo-text" href="#"
-            >the<span class="nav-logo-span">Ham</span></a
-          >
-        </div>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link anch" id="home" href="#">home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link anch" id="about" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link anch" id="blog" href="#blog">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link anch" id="skills" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link anch" id="services" href="#services">Service</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link anch" id="work" href="#work">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link anch" id="testimonial" href="#testimonial"
-              >Testimonial</a
+        <div class="nav-wrapper">
+          <div class="nav-logo">
+            <img class="nav-logo-img" src="./IMG/nav-logo.png" alt="hexagon" />
+            <a class="nav-logo-symbol" href="#">H</a>
+            <a class="nav-logo-text" href="#"
+              >the<span class="nav-logo-span">Ham</span></a
             >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <svg
-                class="search-btn"
-                width="22"
-                height="20"
-                viewBox="0 0 22 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
+          </div>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link anch" id="home" href="#">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link anch" id="about" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link anch" id="blog" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link anch" id="skills" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link anch" id="services" href="#services"
+                >Service</a
               >
-                <rect x="0.909058" width="21.0909" height="20" />
-                <defs>
-                  <pattern
-                    id="pattern0"
-                    patternContentUnits="objectBoundingBox"
-                    width="1"
-                    height="1"
-                  >
-                    <use
-                      xlink:href="#image0_2143:402"
-                      transform="translate(0 -0.0272727) scale(0.0454545 0.0479339)"
+            </li>
+            <li class="nav-item">
+              <a class="nav-link anch" id="work" href="#work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link anch" id="testimonial" href="#testimonial"
+                >Testimonial</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg
+                  class="search-btn"
+                  width="22"
+                  height="20"
+                  viewBox="0 0 22 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <rect x="0.909058" width="21.0909" height="20" />
+                  <defs>
+                    <pattern
+                      id="pattern0"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_2143:402"
+                        transform="translate(0 -0.0272727) scale(0.0454545 0.0479339)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_2143:402"
+                      width="22"
+                      height="22"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+nhxg7wAAAhlJREFUOI2l1EuITmEcx/HP+5oYJZdZyG02FqIkJeUSwmNyFzGUFNnY2ShZ2pCFLGxkQVm4pERuMYfkLs2GkoUsyEhWcsl1WDznzfM+HWbkt3r+//M/3+ec/63W1dUl0yBMxyoEjMUA9OAWzuI2PkEIIX8ftGT2JOzHgvKCVG2YjG24gV14UElFPTnPxiUsyaA/8C2xa5iPi+VfVapWpmIirqI9eXYdF/CsBI9HRwZ7h0UhhIdV4FYcx+rS9xF7cBDvs/iB2IzdGFX67qMjhNAUW8c8LE18B0pwDoWvOIztyuJhBpbngXUs8zun17CvApjrNM4k9oYq8KzEPocP/QD/FAvdW9rTiqIYnIMbufqCp/2ANvQ0+YhWjM7BaWv16r++JvG9+J6DX5XnQZjwD+BJGFqeP+B1Du5O7IViS/WlmjidjQF7EkJIh0hdHIKGlmFLP8DzsSmxj+UBdVwW24xYhL3o/As04BCGlHY3zudBLfiMneJIt2EETmElruCRONJTMBdbNaerDVNxLwXXkrW5BkcwLLv8nVj14WJuq9SDzhDCnYYj3W5nsBg3s5eGlX+RQrv97iYYgxNFUcypAhMXygpsFIv6Em/xBs/FaVsvbrn1mlusHSeLophFcyqq1IqRYvP3VDyfKe6NsYnvJdblX5zrM178AUosWKfmtLTjaF/gPhVCuIu12eXj/htcwu+LXfVY7KIdvwB/ZIC2Fm1HqgAAAABJRU5ErkJggg=="
                     />
-                  </pattern>
-                  <image
-                    id="image0_2143:402"
-                    width="22"
-                    height="22"
-                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+nhxg7wAAAhlJREFUOI2l1EuITmEcx/HP+5oYJZdZyG02FqIkJeUSwmNyFzGUFNnY2ShZ2pCFLGxkQVm4pERuMYfkLs2GkoUsyEhWcsl1WDznzfM+HWbkt3r+//M/3+ec/63W1dUl0yBMxyoEjMUA9OAWzuI2PkEIIX8ftGT2JOzHgvKCVG2YjG24gV14UElFPTnPxiUsyaA/8C2xa5iPi+VfVapWpmIirqI9eXYdF/CsBI9HRwZ7h0UhhIdV4FYcx+rS9xF7cBDvs/iB2IzdGFX67qMjhNAUW8c8LE18B0pwDoWvOIztyuJhBpbngXUs8zun17CvApjrNM4k9oYq8KzEPocP/QD/FAvdW9rTiqIYnIMbufqCp/2ANvQ0+YhWjM7BaWv16r++JvG9+J6DX5XnQZjwD+BJGFqeP+B1Du5O7IViS/WlmjidjQF7EkJIh0hdHIKGlmFLP8DzsSmxj+UBdVwW24xYhL3o/As04BCGlHY3zudBLfiMneJIt2EETmElruCRONJTMBdbNaerDVNxLwXXkrW5BkcwLLv8nVj14WJuq9SDzhDCnYYj3W5nsBg3s5eGlX+RQrv97iYYgxNFUcypAhMXygpsFIv6Em/xBs/FaVsvbrn1mlusHSeLophFcyqq1IqRYvP3VDyfKe6NsYnvJdblX5zrM178AUosWKfmtLTjaF/gPhVCuIu12eXj/htcwu+LXfVY7KIdvwB/ZIC2Fm1HqgAAAABJRU5ErkJggg=="
-                  />
-                </defs>
-              </svg>
-            </a>
-          </li>
-        </ul>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <section class="header-hero">
-        <h2 class="header-subtitle">
-          The Ham is <span class="header-subtitle-span"> Wordpress theme </span>
-        </h2>
-        <h1 class="header-title">we are creative</h1>
-        <h3 class="header-text">Just Buy And Enjoy These Awesome Features</h3>
-        <div class="btn-wrapper">
-          <a class="btn-link-left" href="#">EXPLORE NOW</a>
-          <a class="btn-link-right" href="#">purchase now</a>
+        <div class="header-wrap">
+          <h2 class="header-subtitle">
+            The Ham is
+            <span class="header-subtitle-span"> Wordpress theme </span>
+          </h2>
+          <h1 class="header-title">we are creative</h1>
+          <h3 class="header-text">Just Buy And Enjoy These Awesome Features</h3>
+          <div class="btn-wrapper">
+            <a class="btn-link-left" href="#">EXPLORE NOW</a>
+            <a class="btn-link-right" href="#">purchase now</a>
+          </div>
         </div>
       </section>
     </header>
 
     <main>
       <section class="about">
-        <a name="about"></a>
         <div class="about-block-dark">
           <img
             class="about-img-dark"
@@ -139,6 +145,7 @@
           />
           <p class="about-text-green">responsive all device</p>
         </div>
+        <!-- <a name="about"></a> -->
       </section>
 
       <section class="services">
@@ -301,222 +308,224 @@
       <!-- Section Work -->
 
       <section class="work">
-        <a name="work"></a>
-        <h2 class="section-title">Our Amazing Work</h2>
-        <div class="work-wrapper">
-          <ul class="work-list">
-            <li class="work-menu active" data-filter="all">All</li>
-            <li class="work-menu" data-filter="graphic">Graphic Design</li>
-            <li class="work-menu" data-filter="web">Web Design</li>
-            <li class="work-menu" data-filter="landing">Landing Pages</li>
-            <li class="work-menu" data-filter="wordpress">Wordpress</li>
-          </ul>
+        <div class="work-container">
+          <a name="work"></a>
+          <h2 class="section-title">Our Amazing Work</h2>
+          <div class="work-wrapper">
+            <ul class="work-list">
+              <li class="work-menu active" data-filter="all">All</li>
+              <li class="work-menu" data-filter="graphic">Graphic Design</li>
+              <li class="work-menu" data-filter="web">Web Design</li>
+              <li class="work-menu" data-filter="landing">Landing Pages</li>
+              <li class="work-menu" data-filter="wordpress">Wordpress</li>
+            </ul>
 
-          <ul class="work-content">
-            <li class="work-item graphic">
-              <div class="work-description">
+            <ul class="work-content">
+              <li class="work-item graphic">
+                <div class="work-description">
+                  <img
+                    class="work-cover-img"
+                    src="./IMG/work-cover-img.png"
+                    alt="cover-icon"
+                  />
+                  <h3 class="work-title">creative design</h3>
+                  <p class="work-text">Graphic Design</p>
+                </div>
                 <img
-                  class="work-cover-img"
-                  src="./IMG/work-cover-img.png"
-                  alt="cover-icon"
+                  class="work-image"
+                  src="./IMG/work-img-1.jpeg"
+                  alt="work-image"
                 />
-                <h3 class="work-title">creative design</h3>
-                <p class="work-text">Graphic Design</p>
-              </div>
-              <img
-                class="work-image"
-                src="./IMG/work-img-1.jpeg"
-                alt="work-image"
-              />
-            </li>
-            <li class="work-item wordpress">
-              <div class="work-description">
+              </li>
+              <li class="work-item wordpress">
+                <div class="work-description">
+                  <img
+                    class="work-cover-img"
+                    src="./IMG/work-cover-img.png"
+                    alt="cover-icon"
+                  />
+                  <h3 class="work-title">creative design</h3>
+                  <p class="work-text">Wordpress</p>
+                </div>
                 <img
-                  class="work-cover-img"
-                  src="./IMG/work-cover-img.png"
-                  alt="cover-icon"
+                  class="work-image"
+                  src="./IMG/work-img-2.png"
+                  alt="work-image"
                 />
-                <h3 class="work-title">creative design</h3>
-                <p class="work-text">Wordpress</p>
-              </div>
-              <img
-                class="work-image"
-                src="./IMG/work-img-2.png"
-                alt="work-image"
-              />
-            </li>
-            <li class="work-item web">
-              <div class="work-description">
+              </li>
+              <li class="work-item web">
+                <div class="work-description">
+                  <img
+                    class="work-cover-img"
+                    src="./IMG/work-cover-img.png"
+                    alt="cover-icon"
+                  />
+                  <h3 class="work-title">creative design</h3>
+                  <p class="work-text">Web Design</p>
+                </div>
                 <img
-                  class="work-cover-img"
-                  src="./IMG/work-cover-img.png"
-                  alt="cover-icon"
+                  class="work-image"
+                  src="./IMG/work-img-3.png"
+                  alt="work-image"
                 />
-                <h3 class="work-title">creative design</h3>
-                <p class="work-text">Web Design</p>
-              </div>
-              <img
-                class="work-image"
-                src="./IMG/work-img-3.png"
-                alt="work-image"
-              />
-            </li>
-            <li class="work-item graphic">
-              <div class="work-description">
+              </li>
+              <li class="work-item graphic">
+                <div class="work-description">
+                  <img
+                    class="work-cover-img"
+                    src="./IMG/work-cover-img.png"
+                    alt="cover-icon"
+                  />
+                  <h3 class="work-title">creative design</h3>
+                  <p class="work-text">Graphic Design</p>
+                </div>
                 <img
-                  class="work-cover-img"
-                  src="./IMG/work-cover-img.png"
-                  alt="cover-icon"
+                  class="work-image"
+                  src="./IMG/work-img-4.png"
+                  alt="work-image"
                 />
-                <h3 class="work-title">creative design</h3>
-                <p class="work-text">Graphic Design</p>
-              </div>
-              <img
-                class="work-image"
-                src="./IMG/work-img-4.png"
-                alt="work-image"
-              />
-            </li>
-            <li class="work-item landing">
-              <div class="work-description">
+              </li>
+              <li class="work-item landing">
+                <div class="work-description">
+                  <img
+                    class="work-cover-img"
+                    src="./IMG/work-cover-img.png"
+                    alt="cover-icon"
+                  />
+                  <h3 class="work-title">creative design</h3>
+                  <p class="work-text">Landing Pages</p>
+                </div>
                 <img
-                  class="work-cover-img"
-                  src="./IMG/work-cover-img.png"
-                  alt="cover-icon"
+                  class="work-image"
+                  src="./IMG/work-img-5.png"
+                  alt="work-image"
                 />
-                <h3 class="work-title">creative design</h3>
-                <p class="work-text">Landing Pages</p>
-              </div>
-              <img
-                class="work-image"
-                src="./IMG/work-img-5.png"
-                alt="work-image"
-              />
-            </li>
-            <li class="work-item wordpress">
-              <div class="work-description">
+              </li>
+              <li class="work-item wordpress">
+                <div class="work-description">
+                  <img
+                    class="work-cover-img"
+                    src="./IMG/work-cover-img.png"
+                    alt="cover-icon"
+                  />
+                  <h3 class="work-title">creative design</h3>
+                  <p class="work-text">Wordpress</p>
+                </div>
                 <img
-                  class="work-cover-img"
-                  src="./IMG/work-cover-img.png"
-                  alt="cover-icon"
+                  class="work-image"
+                  src="./IMG/work-img-6.png"
+                  alt="work-image"
                 />
-                <h3 class="work-title">creative design</h3>
-                <p class="work-text">Wordpress</p>
-              </div>
-              <img
-                class="work-image"
-                src="./IMG/work-img-6.png"
-                alt="work-image"
-              />
-            </li>
-            <li class="work-item landing">
-              <div class="work-description">
+              </li>
+              <li class="work-item landing">
+                <div class="work-description">
+                  <img
+                    class="work-cover-img"
+                    src="./IMG/work-cover-img.png"
+                    alt="cover-icon"
+                  />
+                  <h3 class="work-title">creative design</h3>
+                  <p class="work-text">Landing Pages</p>
+                </div>
                 <img
-                  class="work-cover-img"
-                  src="./IMG/work-cover-img.png"
-                  alt="cover-icon"
+                  class="work-image"
+                  src="./IMG/work-img-7.png"
+                  alt="work-image"
                 />
-                <h3 class="work-title">creative design</h3>
-                <p class="work-text">Landing Pages</p>
-              </div>
-              <img
-                class="work-image"
-                src="./IMG/work-img-7.png"
-                alt="work-image"
-              />
-            </li>
-            <li class="work-item graphic">
-              <div class="work-description">
+              </li>
+              <li class="work-item graphic">
+                <div class="work-description">
+                  <img
+                    class="work-cover-img"
+                    src="./IMG/work-cover-img.png"
+                    alt="cover-icon"
+                  />
+                  <h3 class="work-title">creative design</h3>
+                  <p class="work-text">Graphic Design</p>
+                </div>
                 <img
-                  class="work-cover-img"
-                  src="./IMG/work-cover-img.png"
-                  alt="cover-icon"
+                  class="work-image"
+                  src="./IMG/work-img-8.png"
+                  alt="work-image"
                 />
-                <h3 class="work-title">creative design</h3>
-                <p class="work-text">Graphic Design</p>
-              </div>
-              <img
-                class="work-image"
-                src="./IMG/work-img-8.png"
-                alt="work-image"
-              />
-            </li>
-            <li class="work-item web">
-              <div class="work-description">
+              </li>
+              <li class="work-item web">
+                <div class="work-description">
+                  <img
+                    class="work-cover-img"
+                    src="./IMG/work-cover-img.png"
+                    alt="cover-icon"
+                  />
+                  <h3 class="work-title">creative design</h3>
+                  <p class="work-text">Web Design</p>
+                </div>
                 <img
-                  class="work-cover-img"
-                  src="./IMG/work-cover-img.png"
-                  alt="cover-icon"
+                  class="work-image"
+                  src="./IMG/work-img-9.png"
+                  alt="work-image"
                 />
-                <h3 class="work-title">creative design</h3>
-                <p class="work-text">Web Design</p>
-              </div>
-              <img
-                class="work-image"
-                src="./IMG/work-img-9.png"
-                alt="work-image"
-              />
-            </li>
-            <li class="work-item wordpress">
-              <div class="work-description">
+              </li>
+              <li class="work-item wordpress">
+                <div class="work-description">
+                  <img
+                    class="work-cover-img"
+                    src="./IMG/work-cover-img.png"
+                    alt="cover-icon"
+                  />
+                  <h3 class="work-title">creative design</h3>
+                  <p class="work-text">Wordpress</p>
+                </div>
                 <img
-                  class="work-cover-img"
-                  src="./IMG/work-cover-img.png"
-                  alt="cover-icon"
+                  class="work-image"
+                  src="./IMG/work-img-10.png"
+                  alt="work-image"
                 />
-                <h3 class="work-title">creative design</h3>
-                <p class="work-text">Wordpress</p>
-              </div>
-              <img
-                class="work-image"
-                src="./IMG/work-img-10.png"
-                alt="work-image"
-              />
-            </li>
-            <li class="work-item landing">
-              <div class="work-description">
+              </li>
+              <li class="work-item landing">
+                <div class="work-description">
+                  <img
+                    class="work-cover-img"
+                    src="./IMG/work-cover-img.png"
+                    alt="cover-icon"
+                  />
+                  <h3 class="work-title">creative design</h3>
+                  <p class="work-text">Landing Pages</p>
+                </div>
                 <img
-                  class="work-cover-img"
-                  src="./IMG/work-cover-img.png"
-                  alt="cover-icon"
+                  class="work-image"
+                  src="./IMG/work-img-11.png"
+                  alt="work-image"
                 />
-                <h3 class="work-title">creative design</h3>
-                <p class="work-text">Landing Pages</p>
-              </div>
-              <img
-                class="work-image"
-                src="./IMG/work-img-11.png"
-                alt="work-image"
-              />
-            </li>
-            <li class="work-item web">
-              <div class="work-description">
+              </li>
+              <li class="work-item web">
+                <div class="work-description">
+                  <img
+                    class="work-cover-img"
+                    src="./IMG/work-cover-img.png"
+                    alt="cover-icon"
+                  />
+                  <h3 class="work-title">creative design</h3>
+                  <p class="work-text">Web Design</p>
+                </div>
                 <img
-                  class="work-cover-img"
-                  src="./IMG/work-cover-img.png"
-                  alt="cover-icon"
+                  class="work-image"
+                  src="./IMG/work-img-12.png"
+                  alt="work-image"
                 />
-                <h3 class="work-title">creative design</h3>
-                <p class="work-text">Web Design</p>
-              </div>
+              </li>
+            </ul>
+            <div id="container" style="display: none"></div>
+          </div>
+          <div class="work-btn-wrapper">
+            <button id="load" class="work-btn">
               <img
-                class="work-image"
-                src="./IMG/work-img-12.png"
-                alt="work-image"
+                class="work-btn-img"
+                src="./IMG/work-btn-img.png"
+                alt="cross"
               />
-            </li>
-          </ul>
-          <div id="container" style="display: none"></div>
-        </div>
-        <div class="work-btn-wrapper">
-          <button id="load" class="work-btn">
-            <img
-              class="work-btn-img"
-              src="./IMG/work-btn-img.png"
-              alt="cross"
-            />
-            load more
-          </button>
+              load more
+            </button>
+          </div>
         </div>
       </section>
 
@@ -676,153 +685,156 @@
       <!-- Section Testimonial -->
 
       <section class="testimonial">
-        <a name="testimonial"></a>
-        <h2 style="color: #fff" class="section-title">
-          What People Say About theHam
-        </h2>
-        <img
-          src="./IMG/testimonial-quotes.png"
-          alt="quotes"
-          class="testimonial-quotes-img"
-        />
-        <div class="testimonial-tab">
-          <div class="testimonial-tab-content active-tab">
-            <p class="testimonial-text">
-              A Front End Developer, is responsible for using their knowledge of
-              programming languages to code user-side applications, including
-              visual elements like menu bars, clickable buttons and the overall
-              layout of websites or web applications. Their duties include
-              communicating with clients to identify their needs, optimizing
-              websites for different formats like desktops and mobile phones and
-              running tests to ensure code strings perform the correct
-              functions.
-            </p>
-            <p class="testimonial-surname">Oleh Borys</p>
-            <p class="testimonial-profession">Front-End Developer</p>
-            <img
-              class="testimonial-main-img"
-              src="./IMG/testimonial-img-1.png"
-              alt="Oleh Borys"
-              width="166"
-              height="166"
-            />
-          </div>
-          <div class="testimonial-tab-content">
-            <p class="testimonial-text">
-              UX (user experience) designers measure and optimise applications
-              (usually web based) to improve ease of use (usability), and create
-              the best user experience by exploring many different approaches to
-              solve end-users’ problems. One way that a UX designer might do
-              this is by conducting in-person user tests to observe behaviour.
-              They then refine and tweak apps, software and websites to create
-              products that people like and find easy to use.
-            </p>
-            <p class="testimonial-surname">Anna Shevchuk</p>
-            <p class="testimonial-profession">UX Designer</p>
-            <img
-              class="testimonial-main-img"
-              src="./IMG/testimonial-img-2.png"
-              alt="Anna Shevchuk"
-              width="166"
-              height="166"
-            />
-          </div>
-          <div class="testimonial-tab-content">
-            <p class="testimonial-text">
-              A back-end web developer is responsible for server-side web
-              application logic and integration of the work front-end web
-              developers do. Back-end developers usually write web services and
-              APIs used by front-end developers and mobile application
-              developers.There are technologies and knowledge that are common to
-              all web developers, and some that are specific to back-end
-              developers.
-            </p>
-            <p class="testimonial-surname">Viktor Sydorenko</p>
-            <p class="testimonial-profession">Back-End Developer</p>
-            <img
-              class="testimonial-main-img"
-              src="./IMG/testimonial-img-3.png"
-              alt="Viktor Sydorenko"
-              width="166"
-              height="166"
-            />
-          </div>
-          <div class="testimonial-tab-content">
-            <p class="testimonial-text">
-              A chief executive officer (CEO) is the highest-ranking executive
-              in a company, whose primary responsibilities include making major
-              corporate decisions, managing the overall operations and resources
-              of a company, acting as the main point of communication between
-              the board of directors (the board) and corporate operations and
-              being the public face of the company. A CEO is elected by the
-              board and its shareholders.
-            </p>
-            <p class="testimonial-surname">Maria Melnyk</p>
-            <p class="testimonial-profession">Chief Executive Officer</p>
-            <img
-              class="testimonial-main-img"
-              src="./IMG/testimonial-img-4.png"
-              alt="Maria Melnyk"
-              width="166"
-              height="166"
-            />
-          </div>
-        </div>
-        <ul class="testimonial-list">
-          <li class="testimonial-item btn preview-left" data-target="prev">
-            <img
-              width="31"
-              height="31"
-              src="./IMG/testimonial-preview-left.png"
-              alt="preview-left"
-              class="testimonial-img next"
-              data-target="preview-left"
-            />
-          </li>
-          <div class="wrapper-list owl-carousel">
-            <li
-              class="testimonial-item slider-active-tab owl-carousel_li"
-              data-target="0"
-            >
+        <div class="testimonial-wrapper">
+          <a name="testimonial"></a>
+          <h2 style="color: #fff" class="section-title">
+            What People Say About theHam
+          </h2>
+          <img
+            src="./IMG/testimonial-quotes.png"
+            alt="quotes"
+            class="testimonial-quotes-img"
+          />
+          <div class="testimonial-tab">
+            <div class="testimonial-tab-content active-tab">
+              <p class="testimonial-text">
+                A Front End Developer, is responsible for using their knowledge
+                of programming languages to code user-side applications,
+                including visual elements like menu bars, clickable buttons and
+                the overall layout of websites or web applications. Their duties
+                include communicating with clients to identify their needs,
+                optimizing websites for different formats like desktops and
+                mobile phones and running tests to ensure code strings perform
+                the correct functions.
+              </p>
+              <p class="testimonial-surname">Oleh Borys</p>
+              <p class="testimonial-profession">Front-End Developer</p>
               <img
+                class="testimonial-main-img"
                 src="./IMG/testimonial-img-1.png"
                 alt="Oleh Borys"
-                class="testimonial-img"
+                width="166"
+                height="166"
               />
-            </li>
-            <li class="testimonial-item owl-carousel_li" data-target="1">
+            </div>
+            <div class="testimonial-tab-content">
+              <p class="testimonial-text">
+                UX (user experience) designers measure and optimise applications
+                (usually web based) to improve ease of use (usability), and
+                create the best user experience by exploring many different
+                approaches to solve end-users’ problems. One way that a UX
+                designer might do this is by conducting in-person user tests to
+                observe behaviour. They then refine and tweak apps, software and
+                websites to create products that people like and find easy to
+                use.
+              </p>
+              <p class="testimonial-surname">Anna Shevchuk</p>
+              <p class="testimonial-profession">UX Designer</p>
               <img
+                class="testimonial-main-img"
                 src="./IMG/testimonial-img-2.png"
                 alt="Anna Shevchuk"
-                class="testimonial-img"
+                width="166"
+                height="166"
               />
-            </li>
-            <li class="testimonial-item owl-carousel_li" data-target="2">
+            </div>
+            <div class="testimonial-tab-content">
+              <p class="testimonial-text">
+                A back-end web developer is responsible for server-side web
+                application logic and integration of the work front-end web
+                developers do. Back-end developers usually write web services
+                and APIs used by front-end developers and mobile application
+                developers.There are technologies and knowledge that are common
+                to all web developers, and some that are specific to back-end
+                developers.
+              </p>
+              <p class="testimonial-surname">Viktor Sydorenko</p>
+              <p class="testimonial-profession">Back-End Developer</p>
               <img
+                class="testimonial-main-img"
                 src="./IMG/testimonial-img-3.png"
                 alt="Viktor Sydorenko"
-                class="testimonial-img"
+                width="166"
+                height="166"
               />
-            </li>
-            <li class="testimonial-item owl-carousel_li" data-target="3">
+            </div>
+            <div class="testimonial-tab-content">
+              <p class="testimonial-text">
+                A chief executive officer (CEO) is the highest-ranking executive
+                in a company, whose primary responsibilities include making
+                major corporate decisions, managing the overall operations and
+                resources of a company, acting as the main point of
+                communication between the board of directors (the board) and
+                corporate operations and being the public face of the company. A
+                CEO is elected by the board and its shareholders.
+              </p>
+              <p class="testimonial-surname">Maria Melnyk</p>
+              <p class="testimonial-profession">Chief Executive Officer</p>
               <img
+                class="testimonial-main-img"
                 src="./IMG/testimonial-img-4.png"
                 alt="Maria Melnyk"
-                class="testimonial-img"
+                width="166"
+                height="166"
+              />
+            </div>
+          </div>
+          <ul class="testimonial-list">
+            <li class="testimonial-item btn preview-left" data-target="prev">
+              <img
+                width="31"
+                height="31"
+                src="./IMG/testimonial-preview-left.png"
+                alt="preview-left"
+                class="testimonial-img next"
+                data-target="preview-left"
               />
             </li>
-          </div>
-          <li class="testimonial-item btn preview-right" data-target="next">
-            <img
-              width="31"
-              height="31"
-              src="./IMG/testimonial-preview-right.png"
-              alt="preview-right"
-              class="testimonial-img"
-              data-target="preview-right"
-            />
-          </li>
-        </ul>
+            <div class="wrapper-list owl-carousel">
+              <li
+                class="testimonial-item slider-active-tab owl-carousel_li"
+                data-target="0"
+              >
+                <img
+                  src="./IMG/testimonial-img-1.png"
+                  alt="Oleh Borys"
+                  class="testimonial-img"
+                />
+              </li>
+              <li class="testimonial-item owl-carousel_li" data-target="1">
+                <img
+                  src="./IMG/testimonial-img-2.png"
+                  alt="Anna Shevchuk"
+                  class="testimonial-img"
+                />
+              </li>
+              <li class="testimonial-item owl-carousel_li" data-target="2">
+                <img
+                  src="./IMG/testimonial-img-3.png"
+                  alt="Viktor Sydorenko"
+                  class="testimonial-img"
+                />
+              </li>
+              <li class="testimonial-item owl-carousel_li" data-target="3">
+                <img
+                  src="./IMG/testimonial-img-4.png"
+                  alt="Maria Melnyk"
+                  class="testimonial-img"
+                />
+              </li>
+            </div>
+            <li class="testimonial-item btn preview-right" data-target="next">
+              <img
+                width="31"
+                height="31"
+                src="./IMG/testimonial-preview-right.png"
+                alt="preview-right"
+                class="testimonial-img"
+                data-target="preview-right"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Section Gallery -->
@@ -1018,7 +1030,7 @@
 
           <div class="gallery-item">
             <img
-              width="366"
+              width="367"
               height="373"
               class="gallery-img"
               src="./IMG/gallery-9.png"

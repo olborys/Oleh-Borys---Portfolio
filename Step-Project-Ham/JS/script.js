@@ -115,7 +115,6 @@ const arrElemst =[
     {src:'./IMG/work-img-19.jpeg',text:'Landing Pages',class:'landing'},{src:'./IMG/work-img-20.jpeg',text:'Landing Pages',class:'landing'},
     {src:'./IMG/work-img-21.jpeg',text:'Landing Pages',class:'landing'},{src:'./IMG/work-img-22.jpeg',text:'Wordpress',class:'wordpress'},
     {src:'./IMG/work-img-23.jpeg',text:'Wordpress',class:'wordpress'},{src:'./IMG/work-img-24.jpeg',text:'Wordpress',class:'wordpress'},
-
 ]
 
 const  loadLi =()=>{

@@ -42,18 +42,23 @@
 /* Section Nav */
 
 .nav {
-  display: flex;
-  justify-content: space-between;
   top: 0;
   left: 0;
   width: 100%;
   background: rgba(94, 93, 88, 0.6);
 }
 
+.nav-wrapper {
+  max-width: 1160px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
 .nav-logo {
   display: flex;
   align-items: center;
-  margin-left: 100px;
 }
 
 .nav-logo-img {
@@ -61,7 +66,6 @@
   height: 67px;
   display: block;
   align-items: center;
-  position: relative;
 }
 
 .nav-logo-symbol {
@@ -71,7 +75,7 @@
   font-size: 40px;
   line-height: 31px;
   position: absolute;
-  left: 114px;
+  left: 15px;
 }
 
 .nav-logo-text {
@@ -95,13 +99,24 @@
   flex-direction: row;
   align-items: center;
   list-style: none;
-  margin-right: 100px;
+  padding-left: 305px;
 }
 
 .nav-item {
   padding-top: 49px;
   padding-bottom: 49px;
-  padding-right: 21px;
+  margin-right: 21px;
+}
+
+.nav-list .nav-item:hover {
+  border-bottom: 4px solid #18cfab;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.nav-item:hover .nav-link {
+  color: #18cfab;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 .nav-link {
@@ -111,11 +126,6 @@
   line-height: 25px;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.nav-link:hover {
-  color: #18cfab;
-  transition-duration: 0.4s;
 }
 
 .search-btn {
@@ -136,6 +146,10 @@
   background: url(../IMG/nav-hero.jpg);
   background-attachment: fixed;
   background-size: cover;
+}
+.header-wrap {
+  max-width: 1160px;
+  margin: 0 auto;
 }
 
 .header-subtitle {
@@ -218,8 +232,9 @@
 /* Section About */
 
 .about {
-  display: flex;
-  margin-top: 8px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 8px;
 }
 
 .about-block-dark {
@@ -235,13 +250,13 @@
 .about-img-dark {
   display: block;
   margin: auto;
-  padding: 70px 130px 33px;
+  padding: 80px 120px 30px;
 }
 
 .about-img-green {
   display: block;
   margin: auto;
-  padding: 80px 112px 45px;
+  padding: 90px 115px 40px;
 }
 
 .about-text-dark {
@@ -265,6 +280,10 @@
 }
 
 /* Section Services */
+.services {
+  max-width: 1160px;
+  margin: auto;
+}
 
 .section-title {
   font-weight: 400;
@@ -283,7 +302,7 @@
   width: 79px;
   height: 4px;
   position: absolute;
-  left: 580px;
+  left: 510px;
   bottom: 8px;
 }
 
@@ -297,21 +316,23 @@
 }
 
 .wrapper-services {
-  margin: 0px;
-  display: flex;
+  margin: 0 auto;
+  display: grid;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .tabs {
-  display: flex;
-  margin: 0px;
-  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+
   padding-left: 0;
 }
 
 .tabs-item {
+  display: grid;
   position: relative;
   background: #f8fcfe;
   border: 1px solid #edefef;
@@ -320,30 +341,9 @@
   font-size: 16px;
   line-height: 39px;
   font-weight: 400;
-}
-
-.tabs-item:first-child {
-  padding: 16px 34px;
-}
-
-.tabs-item:nth-child(2) {
-  padding: 16px 20px;
-}
-
-.tabs-item:nth-child(3) {
-  padding: 16px 20px;
-}
-
-.tabs-item:nth-child(4) {
-  padding: 16px 34px;
-}
-
-.tabs-item:nth-child(5) {
-  padding: 16px 13px;
-}
-
-.tabs-item:last-child {
-  padding: 16px 36px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  justify-content: center;
 }
 
 .tabs-item:hover {
@@ -361,12 +361,8 @@
   position: absolute;
   border: 20px solid transparent;
   border-top: 20px solid #18cfab;
-  right: 65px;
+  right: 72px;
   bottom: -32px;
-}
-
-.tabs__content {
-  width: 1000px;
 }
 
 .tab {
@@ -459,9 +455,13 @@
 .work {
   background: #e9edef;
 }
+.work-container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
 
 .work-wrapper {
-  margin: 0px;
+  margin: 0 auto;
   display: grid;
   flex-direction: column;
   justify-content: center;
@@ -643,17 +643,21 @@
 }
 
 /* Section News */
+.news {
+  max-width: 1160px;
+  margin: 0 auto;
+}
 
 .news-list {
+  width: 1160px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 128px;
-  padding-left: 40px;
 }
 
 .news-item {
-  margin-right: 35px;
   padding-bottom: 43px;
   position: relative;
 }
@@ -722,6 +726,10 @@
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
+}
+.testimonial-wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
 }
 
 .testimonial-quotes-img {
@@ -815,10 +823,14 @@
 }
 
 /* Section Gallery */
+.galerry {
+  max-width: 1160px;
+  margin: auto;
+}
 
 .gallery-grid {
-  max-width: 1200px;
-  margin-left: 25px;
+  margin: 0 auto;
+  max-width: 1160px;
 }
 
 .hide-gallery {
