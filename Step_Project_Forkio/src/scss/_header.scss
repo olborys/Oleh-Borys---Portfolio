@@ -1,0 +1,256 @@
+.header {
+  min-width: $min-media-mobile;
+  background: #27262a;
+  position: relative;
+
+  @media (min-width: $min-media-desktop) {
+    background: none;
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $min-media-tablet) {
+    flex-wrap: wrap;
+  }
+}
+
+.menu__logo-images-container {
+  display: flex;
+  position: relative;
+  width: 43px;
+  height: 41px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.menu__company-logo-img--hover {
+  display: none;
+}
+
+.menu__company-logo-container {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $min-media-tablet) {
+    flex-basis: 50%;
+  }
+  @media (min-width: $min-media-desktop) {
+    flex-basis: unset;
+
+    &:hover .menu__company-logo-img--hover,
+    &:hover .menu__company-logo-title {
+      display: block;
+      color: $white;
+    }
+  }
+}
+
+.menu__company-logo-title {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: $font-lato;
+  line-height: 16px;
+  margin-left: 17px;
+  text-transform: uppercase;
+  color: $purple;
+  display: none;
+
+  @media (min-width: $min-media-tablet) {
+    display: block;
+  }
+}
+
+.burger-btn__line {
+  width: 26px;
+  height: 3px;
+  margin: 0 0 6px auto;
+  background-color: $white;
+  border: none;
+  border-radius: 5px;
+
+  &:first-child {
+    width: 13px;
+    margin-left: auto;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.burger-btn-container {
+  position: relative;
+  width: 26px;
+  height: 21px;
+
+  @media (min-width: $min-media-tablet) {
+    display: none;
+  }
+}
+
+.burger-btn,
+.hide-btn {
+  position: absolute;
+  width: 26px;
+  height: 21px;
+}
+
+.burger-btn {
+  &--hidden {
+    display: none;
+  }
+}
+
+.hide-btn {
+  vertical-align: center;
+  text-align: center;
+  color: $white;
+  font-weight: bold;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.menu__company-logo-img {
+  position: absolute;
+}
+
+.menu__list {
+  margin-top: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 5;
+
+  & .container {
+    @media (min-width: $min-media-tablet) {
+      @include flex-center;
+      max-width: none;
+      min-width: none;
+      padding: 0;
+    }
+  }
+
+  @media (min-width: $min-media-tablet) {
+    flex-basis: 100%;
+    justify-self: flex-end;
+    @include flex-center;
+    position: static;
+    order: 3;
+  }
+
+  @media (min-width: $min-media-desktop) {
+    order: unset;
+    flex-basis: unset;
+    margin-bottom: 0;
+    margin-right: 47px;
+    margin-left: auto;
+  }
+
+  &-item {
+    font-family: $font-montserrat;
+    padding-bottom: 10px;
+    padding-top: 14px;
+    background: #333333;
+    border-bottom: 3px solid #3b3b3b;
+    @media (min-width: $min-media-tablet) {
+      background: none;
+      border-bottom: none;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      &:not(:last-child) {
+        margin-right: 28px;
+      }
+    }
+
+    @media (min-width: $middle-media-tablet) {
+      &:not(:last-child) {
+        margin-right: 47px;
+      }
+    }
+
+    &:last-child::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 20px;
+      border-bottom: 3px solid #3b3b3b;
+
+      @media (min-width: $min-media-tablet) {
+        display: none;
+      }
+    }
+
+    &:hover &-link,
+    &:active &-link,
+    &:focus &-link {
+      border-left: 8px solid $purple;
+      color: $purple;
+
+      @media (min-width: $min-media-tablet) {
+        border-left: none;
+      }
+      @media (min-width: $min-media-desktop) {
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+
+    &-link {
+      display: block;
+      font-size: 26px;
+      line-height: 26px;
+      color: $white;
+      padding-left: 35px;
+      padding-bottom: 11px;
+      padding-top: 15px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+
+      @media (min-width: $min-media-tablet) {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 18px;
+        padding: 0;
+        color: $purple;
+      }
+
+      // @media (min-width: $min-media-desktop) {
+      //   &:hover {
+      //     color: $white;
+      //   }
+      // }
+    }
+  }
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.btn {
+  border-radius: 40px;
+  background-color: $purple;
+}
+
+.menu__btn-link {
+  font-family: $font-montserrat;
+  padding: 10px 25px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 15px;
+  color: $white;
+
+  @media (min-width: $min-media-desktop) {
+    @include hover-btn;
+  }
+}

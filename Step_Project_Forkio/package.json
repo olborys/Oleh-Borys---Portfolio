@@ -1,0 +1,42 @@
+{
+  "name": "step_project_forkio",
+  "version": "1.0.0",
+  "description": "second step project",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/olv.borys/step_project_forkio"
+  },
+  "author": "Serhii Savrak, Oleh Borys",
+  "license": "ISC",
+  "browserslist": [
+    "last 5 versions",
+    "not IE 11",
+    "maintained node versions"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "browser-sync": "^2.27.7",
+    "cssnano": "^5.0.10",
+    "del": "^6.0.0",
+    "dev-ip": "^1.0.1",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-js-minify": "^0.0.3",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.43.4"
+  }
+}

@@ -1,0 +1,101 @@
+.intro-section {
+  min-width: $min-media-mobile;
+  position: relative;
+  background-image: url("/dist/images/intro-bgd.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro-section__title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: $white;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 19px;
+  padding-top: 50px;
+  font-family: $font-montserrat;
+
+  @media (min-width: $min-media-tablet) {
+    padding-top: 69px;
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  @media (min-width: $min-media-desktop) {
+    font-size: 82px;
+    line-height: 82px;
+  }
+
+  @media (min-width: $min-media-desktop) {
+    padding-top: 183px;
+  }
+}
+
+.intro-section__subtitle {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: $purple;
+  margin-bottom: 14px;
+  font-family: $font-montserrat;
+
+  @media (min-width: $min-media-tablet) {
+    font-family: $font-lato;
+    font-size: 24px;
+  }
+  @media (min-width: $min-media-desktop) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.intro-section__description {
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: $gray;
+  text-transform: uppercase;
+  padding-bottom: 416px;
+  margin-bottom: 0;
+  font-family: $font-montserrat;
+}
+
+.intro-section__btn {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: $white;
+  padding: 15px 30px;
+
+  @media (min-width: $min-media-tablet) {
+    font-size: 21px;
+    line-height: 23px;
+    padding: 23px 61px;
+  }
+  @media (min-width: $min-media-desktop) {
+    @include hover-btn;
+  }
+}
+
+.intro-section__btn-container {
+  display: block;
+  position: absolute;
+  min-width: max-content;
+  bottom: -24px;
+  left: 50%;
+  transform: translate(-50%, 24px);
+
+  &::after {
+    display: block;
+    content: "Unlimited 30-Days Trial Period";
+    margin-top: 28px;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: $gray;
+  }
+}

@@ -1,0 +1,121 @@
+/* ==========================================================================
+  $Media mobile (min-width 320px)
+========================================================================== */
+.editor {
+  min-width: $min-media-mobile;
+}
+
+.editor__title {
+  color: $accent-purple;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 28px;
+  font-family: $font-montserrat;
+  margin-top: 80px;
+}
+.editor__subtitle {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: $accent-gray;
+  text-align: center;
+  font-family: $font-lato;
+  margin: 27px 25px 36px;
+}
+.editor__wrap {
+  margin: 0 auto;
+  padding-bottom: 120px;
+  @include flex-center();
+  flex-wrap: wrap;
+  max-width: 251px;
+}
+.editor__item-wrap {
+  display: flex;
+  border-radius: 6px;
+  border: 1px solid #1b1f2426;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  &:first-child {
+    margin-right: 7px;
+  }
+  &:last-child {
+    margin-top: 20px;
+  }
+}
+.editor__item-box {
+  display: flex;
+  background-color: #f6f8fa;
+  padding: 0 6px;
+  border-right: 1px solid #1b1f2426;
+
+  &--text {
+    padding: 3px;
+    margin: 0;
+    @include editor-wrap-text();
+  }
+  &--img {
+    align-self: center;
+  }
+  &--number {
+    margin: 0;
+    padding: 0 6px;
+    @include editor-wrap-text();
+    &:hover {
+      color: #1169da;
+    }
+  }
+  &:hover {
+    background: #f3f4f6;
+  }
+}
+
+/* ==========================================================================
+  $Media tablet (min-width 481px)
+========================================================================== */
+
+@media (min-width: $min-media-tablet) {
+  .editor__title {
+    font-size: 42px;
+    line-height: 42px;
+    margin-top: 93px;
+  }
+  .editor__subtitle {
+    font-size: 21px;
+    line-height: 32px;
+  }
+  .editor__wrap {
+    max-width: 365px;
+    padding-bottom: 160px;
+  }
+  .editor__item-wrap {
+    &:last-child {
+      margin: 0;
+    }
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+/* ==========================================================================
+  $Media desktop (min-width 993px)
+========================================================================== */
+@media (min-width: $min-media-desktop) {
+  .editor__title {
+    font-size: 54px;
+    line-height: 54px;
+    margin-top: 129px;
+    margin-bottom: 35px;
+  }
+  .editor__wrap {
+    max-width: 365px;
+    padding-bottom: 70px;
+  }
+  .editor__title-wrap {
+    width: 900px;
+    margin: 0 auto;
+  }
+}
